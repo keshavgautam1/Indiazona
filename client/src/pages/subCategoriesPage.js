@@ -36,7 +36,8 @@ const SubCategoriesPage = () => {
 
   const fetchSubCategories = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/subcategories");
+      //http://localhost:5000/subcategories
+      const response = await axios.get("https://indiazona.onrender.com");
       setSubCategories(response.data);
 
       // Extract unique categories from sub-categories
